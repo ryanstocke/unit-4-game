@@ -1,20 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Game </title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
+    <title>Crystal Collector Game </title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-   <div id="images"></div>
-   
-   <script src="javascript\game.js"></script>
-        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="title"> Crystal Collector Game</h1>
+            </div>
+        </div>
 
 
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1>Instructions:</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="content">
+                            <ul>
+                                <li>At the start of the game you will be shown a random number. </li>
+                                <li>You will see that there are four crystals that you can click on. When you click on
+                                    a crystal you will add a points to your total score.</li>
+                                <li>The value of each crystal is hidden until you click on it.</li>
+                            </ul>
+                            <h4> How to win the game:</h4>
+                            <p>You win the game by matching your total score with the random number given to you.</p>
+                            <p>You lose the game if your score exceeds the random score.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">Random Number and Your Total Score</div>
+                <div class="panel-body">
+                    <div class="col-md-6">
+                        <!-- Need to pull in our randomNumber -->
+                        <div class="panel panel-info"></div>
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Random Number:</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4 id="random-number"></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-info">
+                                <div class="pane-heading">
+                                    <h3 class="pane-title">Your total score:</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <h4 id="total-score"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3 id="numWins">Wins:</h3>
+                            <h3 id="numLosses">Losses:</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-defualt">
+                                <div class="panel-body">
+                                    <img src="images/blue.png" class="crystal" id="blueCrystal">
+                                    <img src="images/green.png" class="crystal" id="greenCrystal">
+                                    <img src="images/yellow.png" class="crystal" id="yellowCrystal">
+                                    <img src="images/red.png" class="crystal" id="redCrystal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script src="javascript\game.js"></script>
 </body>
+
 </html>
