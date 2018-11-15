@@ -1,4 +1,17 @@
+body {
+    background-color: slategray;
+}
 
 
+.container {
+    background-color: lightgray;
+}
 
 
+/* .card, .card-header {
+    background-color: slategray;
+} */
+
+/* .card-body {
+    display:inline-block;
+} */
